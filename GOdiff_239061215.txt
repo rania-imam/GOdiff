@@ -1,0 +1,16 @@
+-Create a dict 
+-Open differential expression dataset file and use readlines to skip line 1 
+-Create a variable and strip the new line character and split each tab-separated column
+-Create a variable named p-value and define it as 0.05
+-Float the values in column 6 and if lower than p-value, add to dictionary with the gene name as the key
+-Create another dict 
+-Open the annotation file and output file (writable format)
+-Create the header and write it in output file
+-Strip each newline character and split the tab-separated columns 
+-Create variables for GO:0006096 and values in column 5 
+-Using an if statement, filter out: genes with matching GO terms, included in significant dict and not already included in trimmed dict to add to trimmed dict with gene names
+-Define the variable results as gene names, gene descriptions and p-values with tab separations and a new line character and write it in output.tsv
+-Add gene names and p-values into trimmed
+-Turn trimmed dict into a list and sort the list in ascending order
+-Using a for loop, print the first key and its value from the list
+-Test: Run programme using python3 and use less to view output.tsv
